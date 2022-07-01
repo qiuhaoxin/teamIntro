@@ -1,0 +1,44 @@
+@prefixCls:matrix;
+
+.@{prefixCls}{
+    &-wrapper{
+        margin-left:20px;
+
+        & .@{prefixCls}-title{
+            font-size:20px;
+            margin-top:10px;
+            margin-bottom: 6px;
+        }
+        & .@{prefixCls}-desc{
+            height:100px;
+            & span{
+                display: block;
+            }
+        }
+        & .@{prefixCls}-content{
+            display: flex;
+            flex-direction: column;
+        }
+        & .row{
+            display: flex;
+            flex-direction: row;
+            border:1px solid #eee;
+            border-bottom: none;
+            align-items: center;
+            &:last-child{
+                border-bottom: 1px solid #eee;
+            }
+            & .column{
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-right: 1px solid #eee;
+                &:last-child{
+                    border-right: none;
+                 
+                }
+            }
+        }
+
+    }
+}

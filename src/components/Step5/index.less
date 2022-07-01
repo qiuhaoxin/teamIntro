@@ -1,0 +1,37 @@
+@prefixCls:step5;
+
+.@{prefixCls}{
+    &-wrapper{
+        width:100%;
+        & .@{prefixCls}-header,
+        & .@{prefixCls}-row{
+            width:100%;
+            display: inline-flex;
+            & .@{prefixCls}-column1{
+                width:100px;
+                flex-shrink: 0;
+            }
+            & .@{prefixCls}-column2{
+                flex-grow:1;
+            }
+        }
+        & .@{prefixCls}-content{
+            display: flex;
+            flex-direction: column;
+            & .@{prefixCls}-row{
+
+            }
+            
+        }
+        & .@{prefixCls}-row{
+            margin-bottom:20px;
+            & .@{prefixCls}-column2{
+                & .@{prefixCls}-unit{
+                    margin-left:10px;
+                }
+            }
+        }
+
+
+    }
+}

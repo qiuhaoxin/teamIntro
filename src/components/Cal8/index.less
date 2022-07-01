@@ -1,0 +1,24 @@
+@prefixCls:cal8;
+
+
+.@{prefixCls}{
+    &-wrapper{
+        width:100%;
+        & .@{prefixCls}-content{
+            border:1px solid #eee;
+            border-radius: 2px;
+        }
+        & .row{
+            width:100%;
+            margin-top:10px;
+            display: inline-flex;
+            border-bottom: 1px solid #eee;
+            align-items: center;
+            justify-content: center;
+            & span{
+                width:30%;
+                margin-left:20px
+            }
+        }
+    }
+}
